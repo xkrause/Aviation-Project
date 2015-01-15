@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- Important Notes:
+
+Answers for each problem:
+1. Aircraft Owners and Pilots Association
+2. Temporary Flight Restriction
+3. "Options", "Choose" and "Evaluate" respectively
+4. 15 to 20 seconds, 3 to 5 minutes, 30 minutes or more respectively
+
+   - Chau (Joe)
+-->
+<html>
+<head>
+   <title> Aviation Course </title>
+   <style>
+      body
+	 {
+	    background-color: #789048;
+	    background-size:100%;
+	 }
+	 
+      h2
+	 {
+	    font-size: 150%;
+	    color: #FF9900;
+	    font-family: inherit;
+	    text-align: center;
+	 }
+      
+      h3
+	 {
+	    font-family: inherit;
+	    background-color: #789048;
+	    color: white;
+	    border-style: solid;
+	    border-left-color: #789048;
+	    border-right-color: #789048;
+	    text-align: center;
+	    font-size: 200%;
+	 }
+	 
+	 h4
+	 {
+	    font-size: 150%;
+	    color: #789048;
+	    font-family: inherit;
+	    text-align: center;
+	 }
+	    
+      #Submit1, #Submit2, #Submit3 #Submit4
+      {
+	color: #009933;
+      }
+      
+      #Def1, #Def2, #Def3, #Def4
+      {
+	color: #00CC99;
+      }
+      
+      .textbox
+      { 
+	height: 30px; 
+	width: 350px; 
+	background-color: transparent;  
+	border-style: solid;  
+	border-width: 0px 0px 1px 0px;  
+	border-color: darkred; 
+	outline:0;
+	font-size: 100%;
+      }
+      
+      .smallTextbox
+      { 
+	height: 30px; 
+	width: 150px; 
+	background-color: transparent;  
+	border-style: solid;  
+	border-width: 0px 0px 1px 0px;  
+	border-color: darkred; 
+	outline:0;
+	font-size: 100%;
+	text-align: center;
+      }
+      
+      #Main1, #Main2, #Main3, #Main4, #Main5
+      {
+       width: 700px;
+       height: 700px;
+       margin-left: auto;
+       margin-right: auto;
+       font-size: 125%;
+      }
+       
+      img
+      {
+	 margin-left: 15%;
+	 width:500px;
+	 height:400px;
+      }
+      
+      .mq
+       {
+        color: #f0f0d8;
+        border-radius: 8px;
+        background-color:#FF9900;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+         margin-left: 5px;
+         
+       }
+       .mq:hover
+       {
+        color: #789048;
+       }
+       .home
+       {
+        color: #f0f0d8;
+        border-radius: 8px;
+        background-color:#FF9900;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+       }
+       
+       .home:hover
+       {
+         color: #789048;
+      }
+      
+      #practiceBody
+       {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+        background-color: #f0f0d8;
+       }
+}
+ </style> 
+
+   </style>
+</head>
+
+<body>
+<a class = "home" href = "testNav.html"> Home </a>
+<a class = "mq"  href = "MPractice.html"> Sections </a>
+
+<script src ="http://code.jquery.com/jquery.js"></script>
+<h3> <center> <strong>PRACTICE PAGE</strong></center></h1>
+
+<div id = practiceBody>
+<div id = "Intro">
+    <h4> <center> Answer the question below and press "Submit" to proceed. <br>
+		  The answer will show up after 3 wrong guesses.</center></h4> <br> <br>
+</div>
+<!-- &#8594 means Right Arrow-->
+<div id = "Main1">
+	<h2> Enter the correct definition of the accronym: </h2>
+	
+	<img src = "Images/AOPA.png" alt="" > <br>
+	Enter the definition: <input class= "textbox" type= "text" id = "typeBox1" autofocus>
+	<button id = "Submit1">Submit</button> 
+	<button id = "Next1" disabled="disabled">Next question &#8594</button><br>
+	<p id = "Wrong1">Incorrect answer. Plese try again.</p1>
+	<p id = "Def1">Aircraft Owners and Pilots Association</p>
+</div>
+
+<div id = "Main2">
+	<h2> Enter the vocabulary corresponding to the image: </h2>
+	
+	<img src = "Images/TFR.jpg" alt="" > <br>
+	Enter the vocabulary: <input class= "textbox" type= "text" id = "typeBox2" autofocus>
+	<button id = "Submit2">Submit</button> 
+	<button id = "Next2" disabled="disabled">Next question &#8594</button><br>
+	<p id = "Wrong2">Incorrect answer. Plese try again.</p1>
+	<p id = "Def2">Temporary Flight Restriction</p>
+</div>
+	
+<div id = "Main3">
+	<h2> Fill in the Decision-making Process in order: </h2>
+	
+	Situation &#8594; <input class= "smallTextbox" type= "text" id = "typeBox3_1" autofocus> &#8594;
+	<input class= "smallTextbox" type= "text" id = "typeBox3_2" autofocus> &#8594 Act &#8594
+        <input class= "smallTextbox" type= "text" id = "typeBox3_3" autofocus>.
+	    
+	<button id = "Submit3">Submit</button> 
+	<button id = "Next3" disabled="disabled">Next question &#8594</button><br>
+	<p id = "Wrong3">Incorrect answer. Plese try again.</p1>
+	<p id = "Def3_1">Options</p>
+	<p id = "Def3_2">Choose</p>
+	<p id = "Def3_3">Evaluate</p>
+	<p id = "Def3">Situation &#8594 Options &#8594 Choose &#8594 Act &#8594 Evaluate.</p>
+</div>
+
+<div id = "Main4">
+	<h2> Match the Altitude to Time of Useful Consciousness: </h2>
+	
+	40,000 feet MSL:  <input list="interval" type="text" name="time" placeholder=" ">
+	    <datalist id="interval">
+	       <option value="3 to 5 minutes">
+	       <option value="30 to 60 seconds">
+	       <option value="30 minutes or more">
+	       <option value="1 to 2 minutes">  
+	       <option value="15 to 20 seconds">
+	    </datalist> <br>
+	    
+	 25,000 feet MSL:  <input list="interval" type="text" name="time" placeholder=" ">
+	    <datalist id="interval">
+	       <option value="3 to 5 minutes">
+	       <option value="30 to 60 seconds">
+	       <option value="30 minutes or more">
+	       <option value="1 to 2 minutes">  
+	       <option value="15 to 20 seconds">
+	    </datalist> <br>
+	    
+	 20,000 feet MSL:  <input list="interval" type="text" name="time" placeholder=" ">
+	    <datalist id="interval">
+	       <option value="3 to 5 minutes">
+	       <option value="30 to 60 seconds">
+	       <option value="30 minutes or more">
+	       <option value="1 to 2 minutes">  
+	       <option value="15 to 20 seconds">
+	    </datalist> <br>
+	    
+	<button id = "Submit4">Submit</button> 
+	<button id = "Next4" disabled="disabled">Done!</button><br>
+	<p id = "Wrong4">Incorrect answer. Plese try again.</p1>
+	<p id = "Def4">
+	    40,000 feet MSL: 15 to 20 seconds. <br>
+	    25,000 feet MSL: 3 to 5 minutes. <br>
+	    20,000 feet MSL: 30 minutes or more. <br>
+	</p>
+</div>
+
+<div id = "Main5">
+	<h2><b>You have finished the Practice!</b></h2>
+	
+</div>
+
+
+
+<script>
+    $("p").hide(); // Hide all the p, which is the definition, by default.
+    $("#Main2").hide();
+    $("#Main3").hide();
+    $("#Main4").hide();
+    $("#Main5").hide();
+    
+    /*
+      $(function() // Checking user input
+      {
+	 alert($("#Def1").text().toLowerCase());
+      });*/
+        var counter = 0; // Set the counter at default
+	$("#Submit1").click(function()
+	{
+	    counter++;
+		if ($("#typeBox1").val().toLowerCase() == $("#Def1").text().toLowerCase())
+		{
+		  $("#Def1").replaceWith("You have answered correctly. Please move on!");
+		  $("#Wrong1").remove();
+		  
+		  $("#Next1").removeAttr("disabled"); // Enable the Next button.
+		}	
+		else if (counter == 3)
+	       {
+		  $("#Def1").show("fast");
+		  $("#Wrong1").remove();
+	 
+		  $("#Next1").removeAttr("disabled"); // Enable the Next button.
+	       }
+		else
+		{
+		  $("#Wrong1").show();
+		}	
+		
+	});
+	
+	$("#Next1").click(function() // Move to the next question.
+	{
+	    $("#Main1").hide();
+	    $("#Main2").show();
+	});
+	
+	var counter2 = 0;
+	$("#Submit2").click(function()
+	{
+	    counter2++;
+		if ($("#typeBox2").val().toLowerCase() == $("#Def2").text().toLowerCase())
+		{
+		  $("#Def2").replaceWith("You have answered correctly. Please move on!");
+		  $("#Wrong2").remove();
+		  
+		  $("#Next2").removeAttr("disabled"); // Enable the Next button.
+		}
+		else if (counter2 == 3)
+	       {
+		  $("#Def2").show("fast");
+		  $("#Wrong2").remove();
+	 
+		  $("#Next2").removeAttr("disabled"); // Enable the Next button.
+	       }
+		else
+		{
+		  $("#Wrong2").show();
+		}		
+	});
+	
+	$("#Next2").click(function() // Move to the next question.
+	{
+	    $("#Main1").hide();
+	    $("#Main2").hide();
+	    $("#Main3").show();
+	});
+	
+	var counter3 = 0;
+	$("#Submit3").click(function()
+	{
+	    counter3++;
+		if (($("#typeBox3_1").val().toLowerCase() == $("#Def3_1").text().toLowerCase())
+		&& ($("#typeBox3_2").val().toLowerCase() == $("#Def3_2").text().toLowerCase())
+	        && ($("#typeBox3_3").val().toLowerCase() == $("#Def3_3").text().toLowerCase()))
+		{
+		  $("#Def3").replaceWith("You have answered correctly. Please move on!");
+		  $("#Wrong3").remove();
+		  
+		  $("#Next3").removeAttr("disabled"); // Enable the Next button.
+		}
+		else if (counter3 == 3)
+	       {
+		  $("#Def3").show("fast");
+		  $("#Wrong3").remove();
+	 
+		  $("#Next3").removeAttr("disabled"); // Enable the Next button.
+	       }
+		else
+		{
+		  $("#Wrong3").show();
+		}		
+	});
+
+	$("#Next3").click(function() // Move to the next question.
+	{
+	    $("#Main1").hide();
+	    $("#Main2").hide();
+	    $("#Main3").hide();
+	    $("#Main4").show();
+	});
+	
+      $("#Submit4").click(function() // Prototype code
+	{
+		  $("#Def4").replaceWith("You have answered correctly. Please move on!");
+		  //$("#Wrong4").remove();
+		  
+		  $("#Next4").removeAttr("disabled"); // Enable the Next button.		
+	});
+	
+	$("#Next4").click(function() // Move to the next question.
+	{
+	    $("#Main1").hide();
+	    $("#Main2").hide();
+	    $("#Main3").hide();
+	    $("#Main4").hide();
+	    $("#Main5").show();
+	});
+	
+</script>
+</div>
+</body>
+</html>
